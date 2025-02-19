@@ -1,11 +1,10 @@
 import { Router } from "express";
-import { home } from "../controllers/homeController";
-import { getData } from "../controllers/dataController";
+import { getData, getHome } from "../controllers/indexController";
 
 const router = Router();
 
 router
-    .get("/", home);
+    .get("/", getHome);
 router
     .get("/data", getData);
 
