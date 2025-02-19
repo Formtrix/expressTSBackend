@@ -1,5 +1,7 @@
 # Node.js
 node_modules/
+prisma/
+dist/
 npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
