@@ -1,6 +1,6 @@
 import { Request, Response, RequestHandler } from "express";
 import { createUser as createUserModel, validatePassword, generateJwt } from "../database/models/user";
-import prisma from '../database/db';
+import prisma from '../database/prisma';
 import { Prisma } from '@prisma/client';
 
 // Define type-safe select objects
