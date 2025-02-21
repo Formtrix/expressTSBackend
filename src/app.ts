@@ -1,6 +1,5 @@
 import cors from "cors";
 import express from "express";
-import helmet from "helmet";
 import morgan from "morgan";
 import env from "./lib/env";
 import indexRouter from "./app_api/routes/index";
@@ -11,7 +10,6 @@ const app = express();
 
 // Middlewares
 app.use(morgan("dev"));
-app.use(helmet());
 app.use(
   cors({
     origin: env.APP_ORIGIN,

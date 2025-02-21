@@ -1,12 +1,13 @@
 {
-  "name": "expressTSBackend",
+  "name": "expressTSB",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc --build",
-    "start": "node ./dist/server.js",
-    "dev": "node -r ts-node/register --watch --env-file=.env ./src/server.ts",
+    "start": "node src/app.ts",
+    "dev": "npx tsx --env-file=.env --watch  src/server.ts",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -22,11 +23,12 @@
     "dotenv": "^16.4.7",
     "express": "^5.0.1",
     "express-validator": "^7.2.1",
-    "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
     "postgres": "^3.4.5",
     "ts-patch": "^3.3.0",
+    "tsx": "^4.19.3",
     "typescript-transform-paths": "^3.5.3",
     "zod": "^3.24.2"
   },
