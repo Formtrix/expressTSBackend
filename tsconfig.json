@@ -1,11 +1,8 @@
 {
-  "ts-node": {
-    "transpileOnly": true,
-    "require": ["typescript-transform-paths/register"]
-  },
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext", // ES modules
+    "module": "NodeNext",
+    "moduleResolution": "nodenext", // or "nodenext"
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -22,5 +19,6 @@
       { "transform": "typescript-transform-paths" },
       { "transform": "typescript-transform-paths", "afterDeclarations": true }
     ]
-  }
+  },
+  "include": ["src"]
 }
